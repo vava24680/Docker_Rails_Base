@@ -8,4 +8,4 @@ RUN cd $APP_ROOT \
     && useradd -m --uid $USERID app \
     && bundle install \
     && chown -R app:app $APP_ROOT
-CMD ["su", "-c", "bundle exec rails new . --force --database=mysql --skip-bundle", "app"]
+CMD ["su", "-c", "bundle exec rails new . --force --database=mysql --skip-bundle --api", "app"]
